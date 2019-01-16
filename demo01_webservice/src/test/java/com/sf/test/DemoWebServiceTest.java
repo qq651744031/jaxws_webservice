@@ -17,7 +17,7 @@ public class DemoWebServiceTest {
         JaxWsServerFactoryBean factory = new JaxWsServerFactoryBean();
 
         //2.设置服务地址
-        factory.setAddress("http://localhost:8010/ws/hello");
+        factory.setAddress("http://localhost:8010/ws/hello?wsdl");
 
         //3.设置服务类
         factory.setServiceBean(new DemoServiceImpl());

@@ -9,5 +9,5 @@ import javax.jws.WebService;
  ***/
 @WebService
 public interface DemoService {
-    public String sayHello(String name);
+    public String sayHello(String name , Integer age);
 }

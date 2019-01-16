@@ -9,7 +9,7 @@ import com.sf.service.DemoService;
  ***/
 public class DemoServiceImpl implements DemoService {
     @Override
-    public String sayHello(String name) {
-        return name+" you are very good !";
+    public String sayHello(String name,Integer age) {
+        return name+" you are very good !"+age+"years old !";
     }
 }
