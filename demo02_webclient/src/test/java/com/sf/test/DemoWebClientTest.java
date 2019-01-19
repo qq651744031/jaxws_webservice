@@ -22,7 +22,7 @@ public class DemoWebClientTest {
         System.out.println(demoService.getClass());
         //5.远程访问服务端方法
         String content = demoService.sayHello("Jack",28);
-        String message = demoService.getMessage("Tony");
+        String message = demoService.getMessage("Meak");
 
         System.out.println(content);
         System.out.println(message);
