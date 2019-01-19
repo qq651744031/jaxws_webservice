@@ -21,8 +21,10 @@ public class DemoWebClientTest {
         //4.2代理对象
         System.out.println(demoService.getClass());
         //5.远程访问服务端方法
-        String content = demoService.sayHello("Tom",28);
+        String content = demoService.sayHello("Jack",28);
+        String message = demoService.getMessage("Tony");
 
         System.out.println(content);
+        System.out.println(message);
     }
 }
