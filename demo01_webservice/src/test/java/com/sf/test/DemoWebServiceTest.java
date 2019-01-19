@@ -1,6 +1,7 @@
 package com.sf.test;
 
 import com.sf.service.impl.DemoServiceImpl;
+import org.apache.cxf.endpoint.Server;
 import org.apache.cxf.interceptor.LoggingInInterceptor;
 import org.apache.cxf.interceptor.LoggingOutInterceptor;
 import org.apache.cxf.jaxws.JaxWsServerFactoryBean;
@@ -26,8 +27,9 @@ public class DemoWebServiceTest {
         factory.getOutInterceptors().add(new LoggingOutInterceptor());
 
         //4.发布服务
-        factory.create();
-
+        Server server = factory.create();
+        System.out.println(server + "---------");
+        server.start();
         System.out.println("---发布服务成功，端口8010......");
 
     }

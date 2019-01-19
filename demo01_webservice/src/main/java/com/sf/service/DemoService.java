@@ -10,4 +10,5 @@ import javax.jws.WebService;
 @WebService
 public interface DemoService {
     public String sayHello(String name,Integer age);
+    public String getMessage(String who);
 }
